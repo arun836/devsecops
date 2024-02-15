@@ -37,6 +37,5 @@ kind: Target
 metadata:
  name: prod
 description: production cluster
-requireApproval: true
 gke:
  cluster: projects/<<PROJECT_ID>>/locations/us-central1/clusters/prod #Update with your product ID instead of <<PROJECT_ID>>

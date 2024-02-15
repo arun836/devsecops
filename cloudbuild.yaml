@@ -6,7 +6,7 @@ steps:
      - -c
      - |
        docker build -t us-central1-docker.pkg.dev/$PROJECT_ID/test-repo/cd:$REVISION_ID -f ./Dockerfile . &&
-       docker image inspect us-central1-docker.pkg.dev/$PROJECT_ID/test-repocd:$REVISION_ID
+       docker image inspect us-central1-docker.pkg.dev/$PROJECT_ID/test-repo/cd:$REVISION_ID
    - id: Scan The Image
      name: 'gcr.io/cloud-builders/gcloud'
      entrypoint: /bin/bash
